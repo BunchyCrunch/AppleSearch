@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC47021D23466A0A00E4C377 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47021C23466A0A00E4C377 /* SearchResultsTableViewController.swift */; };
+		FC47022023466AD500E4C377 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47021F23466AD500E4C377 /* ResultTableViewCell.swift */; };
+		FC985CEC234656A2009273F1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985CEB234656A2009273F1 /* SearchResult.swift */; };
+		FC985CEF23465860009273F1 /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985CEE23465860009273F1 /* SearchResultController.swift */; };
 		FCAA7AD22346559D0022D236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAA7AD12346559D0022D236 /* AppDelegate.swift */; };
 		FCAA7AD42346559D0022D236 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAA7AD32346559D0022D236 /* SceneDelegate.swift */; };
-		FCAA7AD62346559D0022D236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAA7AD52346559D0022D236 /* ViewController.swift */; };
 		FCAA7AD92346559D0022D236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAA7AD72346559D0022D236 /* Main.storyboard */; };
 		FCAA7ADB2346559F0022D236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAA7ADA2346559F0022D236 /* Assets.xcassets */; };
 		FCAA7ADE2346559F0022D236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAA7ADC2346559F0022D236 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC47021C23466A0A00E4C377 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		FC47021F23466AD500E4C377 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		FC985CEB234656A2009273F1 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		FC985CEE23465860009273F1 /* SearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
 		FCAA7ACE2346559D0022D236 /* AppleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAA7AD12346559D0022D236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCAA7AD32346559D0022D236 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCAA7AD52346559D0022D236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCAA7AD82346559D0022D236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCAA7ADA2346559F0022D236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCAA7ADD2346559F0022D236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC47021E23466A0E00E4C377 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC47021C23466A0A00E4C377 /* SearchResultsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FC47022123466AEA00E4C377 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC47021F23466AD500E4C377 /* ResultTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		FC985CED234656A7009273F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC985CEB234656A2009273F1 /* SearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC985CF023465863009273F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC985CF12346587E009273F1 /* Model Controllers */,
+				FC47021E23466A0E00E4C377 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC985CF12346587E009273F1 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC985CEE23465860009273F1 /* SearchResultController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
 		FCAA7AC52346559D0022D236 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +103,41 @@
 		FCAA7AD02346559D0022D236 /* AppleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				FC985CED234656A7009273F1 /* Models */,
+				FCAA7AE62346565E0022D236 /* Views */,
+				FC985CF023465863009273F1 /* Controllers */,
+				FCAA7AE52346564C0022D236 /* Resources */,
+			);
+			path = AppleSearch;
+			sourceTree = "<group>";
+		};
+		FCAA7AE52346564C0022D236 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FCAA7AD12346559D0022D236 /* AppDelegate.swift */,
 				FCAA7AD32346559D0022D236 /* SceneDelegate.swift */,
-				FCAA7AD52346559D0022D236 /* ViewController.swift */,
-				FCAA7AD72346559D0022D236 /* Main.storyboard */,
 				FCAA7ADA2346559F0022D236 /* Assets.xcassets */,
 				FCAA7ADC2346559F0022D236 /* LaunchScreen.storyboard */,
 				FCAA7ADF2346559F0022D236 /* Info.plist */,
 			);
-			path = AppleSearch;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCAA7AE62346565E0022D236 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC47022123466AEA00E4C377 /* Custom Views */,
+				FCAA7AE7234656620022D236 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCAA7AE7234656620022D236 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FCAA7AD72346559D0022D236 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCAA7AD62346559D0022D236 /* ViewController.swift in Sources */,
 				FCAA7AD22346559D0022D236 /* AppDelegate.swift in Sources */,
+				FC985CEC234656A2009273F1 /* SearchResult.swift in Sources */,
+				FC47021D23466A0A00E4C377 /* SearchResultsTableViewController.swift in Sources */,
 				FCAA7AD42346559D0022D236 /* SceneDelegate.swift in Sources */,
+				FC47022023466AD500E4C377 /* ResultTableViewCell.swift in Sources */,
+				FC985CEF23465860009273F1 /* SearchResultController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNY44KHWJJ;
-				INFOPLIST_FILE = AppleSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppleSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNY44KHWJJ;
-				INFOPLIST_FILE = AppleSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppleSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
